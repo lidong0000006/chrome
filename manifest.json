@@ -1,0 +1,14 @@
+{  
+  "manifest_version": 3,  
+  "name": "English to Chinese Translator",  
+  "version": "1.0",  
+  "description": "Translate English text to Chinese on web pages.",  
+  "permissions": ["activeTab"],  
+  "action": {  
+    "default_popup": "popup.html"  
+  },  
+  "content_scripts": [{  
+    "matches": ["<all_urls>"],  
+    "js": ["content.js"]  
+  }]  
+}
